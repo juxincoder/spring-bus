@@ -21,7 +21,8 @@
     <modules>
         <module>eureka-server</module>
         <module>config-server</module>
-        <module>config-client</module>
+        <module>buy_service</module>
+        <module>pay_service</module>
     </modules>
 
 
