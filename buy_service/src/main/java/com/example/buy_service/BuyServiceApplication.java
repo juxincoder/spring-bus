@@ -9,20 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
 @EnableEurekaClient
-@RefreshScope
+
 public class BuyServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(BuyServiceApplication.class, args);
-    }
-
-    @Value("${spring.redis.port}")
-    String redisPort;
-
-    @RequestMapping(value = "/redis/port")
-    public String hi() {
-        return redisPort;
     }
 }

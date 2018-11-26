@@ -10,19 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableEurekaClient
-@RestController
-@RefreshScope
 public class PayServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(PayServiceApplication.class, args);
-    }
-
-    @Value("${spring.redis.port}")
-    String redisPort;
-
-    @RequestMapping(value = "/redis/port")
-    public String hi() {
-        return redisPort;
     }
 }
